@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MAX_DATA	/Users/travislagrone/GitHub/sandbox/main-2.c	/^#define MAX_DATA /;"	macro	line:4	file:
+DATA_TYPES	/Users/travislagrone/GitHub/sandbox/main-2.c	/^enum DATA_TYPES$/;"	enum	line:6	file:
+health_data	/Users/travislagrone/GitHub/sandbox/main-2.c	/^ 	health_data,$/;"	enumerator	line:8	enum:DATA_TYPES	file:
+experiment_data	/Users/travislagrone/GitHub/sandbox/main-2.c	/^	experiment_data$/;"	enumerator	line:9	enum:DATA_TYPES	file:
+data	/Users/travislagrone/GitHub/sandbox/main-2.c	/^} data;$/;"	variable	line:10	typeref:enum:DATA_TYPES
+health_info	/Users/travislagrone/GitHub/sandbox/main-2.c	/^struct health_info$/;"	struct	line:12	file:
+temperature	/Users/travislagrone/GitHub/sandbox/main-2.c	/^	float temperature;$/;"	member	line:14	struct:health_info	file:
+voltage	/Users/travislagrone/GitHub/sandbox/main-2.c	/^	float voltage;$/;"	member	line:15	struct:health_info	file:
+experiment_info	/Users/travislagrone/GitHub/sandbox/main-2.c	/^struct experiment_info$/;"	struct	line:18	file:
+radiation_count	/Users/travislagrone/GitHub/sandbox/main-2.c	/^	unsigned int radiation_count;$/;"	member	line:20	struct:experiment_info	file:
+latchup_events	/Users/travislagrone/GitHub/sandbox/main-2.c	/^	unsigned int latchup_events;$/;"	member	line:21	struct:experiment_info	file:
+satellite_Data_Union	/Users/travislagrone/GitHub/sandbox/main-2.c	/^union satellite_Data_Union$/;"	union	line:24	file:
+health_Data	/Users/travislagrone/GitHub/sandbox/main-2.c	/^	struct health_info health_Data;$/;"	member	line:26	union:satellite_Data_Union	typeref:struct:satellite_Data_Union::health_info	file:
+experiment_Data	/Users/travislagrone/GitHub/sandbox/main-2.c	/^	struct experiment_info experiment_Data;$/;"	member	line:27	union:satellite_Data_Union	typeref:struct:satellite_Data_Union::experiment_info	file:
+satellite_Data	/Users/travislagrone/GitHub/sandbox/main-2.c	/^struct satellite_Data$/;"	struct	line:30	file:
+data	/Users/travislagrone/GitHub/sandbox/main-2.c	/^	union satellite_Data_Union data;$/;"	member	line:32	struct:satellite_Data	typeref:union:satellite_Data::satellite_Data_Union	file:
+data_Type	/Users/travislagrone/GitHub/sandbox/main-2.c	/^	char data_Type;$/;"	member	line:33	struct:satellite_Data	file:
+all_Data	/Users/travislagrone/GitHub/sandbox/main-2.c	/^struct satellite_Data all_Data[];$/;"	variable	line:36	typeref:struct:satellite_Data
+main	/Users/travislagrone/GitHub/sandbox/main-2.c	/^int main()$/;"	function	line:43
+get_ExperimentInfo	/Users/travislagrone/GitHub/sandbox/main-2.c	/^struct satellite_Data get_ExperimentInfo()$/;"	function	line:90
+get_SatelliteHealth	/Users/travislagrone/GitHub/sandbox/main-2.c	/^struct satellite_Data get_SatelliteHealth()$/;"	function	line:101
+print_Summary	/Users/travislagrone/GitHub/sandbox/main-2.c	/^void print_Summary(struct satellite_Data satellite_data[])$/;"	function	line:118	signature:(struct satellite_Data satellite_data[])
